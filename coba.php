@@ -3,7 +3,7 @@ $var='kosong';
 if($var=='kosong'){ ?>
     
 <li class="nav-item dropdown">
-          <a class="nav-link" data-toggle="dropdown" href="#">
+          <a class="nav-link" data-toggle="dropdown" href="">
             <i class="fas fa-user"></i>
             <span class="badge badge-warning navbar-badge"></span>
           </a>
