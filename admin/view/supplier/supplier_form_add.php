@@ -37,21 +37,21 @@
                   <div class="form-group row">
                     <label for="harga" class="col-sm-2 control-label">Hp</label>
                     <div class="col-sm-10">
-                      <input type="number" class="form-control" id="harga" name="hp" placeholder="Harga">
+                      <input type="text" class="form-control" name="hp" placeholder="Hp" maxlength="13">
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="alamat" class="col-sm-2 control-label">Alamat</label>
                     <div class="col-sm-10">
-                    <textarea name="alamat" name="alamat" class="form-control"></textarea>
+                    <textarea name="alamat" name="alamat" class="form-control" placeholder="Alamat"></textarea>
                     </div>
                   </div>
 
                   <div class="form-group row">
                     <label for="detail" class="col-sm-2 control-label">Detail</label>
                     <div class="col-sm-10">
-                      <textarea name="detail" id="detail" name="detail" class="form-control"></textarea>
+                      <textarea name="detail" id="detail" name="detail" class="form-control"  placeholder="Detail " ></textarea>
                     </div>
                   </div>
                 </div>
@@ -63,7 +63,5 @@
             </div>
           </div>
       </div>
-
     </section>
-
   </div>

@@ -59,7 +59,7 @@
 
                         ><i class="fas fa-eye"></i> Lihat</button>
                         <a href="?halaman=supplier&aksi=edit&id=<?php echo $result ['id_supplier']; ?>" class="btn btn-default"><i class="fas fa-edit"></i> Ubah</a>
-                        <button onClick="ShowModal(this)"  data-id="<?php echo $result ['id_supplier']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
+                        <button onClick="ShowModals(this)"  data-id="<?php echo $result ['id_supplier']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
                       </div>
                     </td>
                   </tr>
@@ -137,7 +137,7 @@
 
 
       
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="assets/plugins/jquery/jquery.min.js"></script>
 
 <script>
 
@@ -147,10 +147,7 @@
     var newNama = $(this).data('nama');
     var newAlamat = $(this).data('alamat');
     var newHp = $(this).data('hp');
-    var newDetail = $(this).data('detail');
-
-  
-
+    var newDetail = $(this).data('detail'); 
     $('#m_nama').val(newNama);
     $('#m_alamat').val(newAlamat);
     $('#m_hp').val(newHp);
@@ -164,7 +161,7 @@
 
 
 <script>
-function ShowModal(elem){
+function ShowModals(elem){
 var dataId = $(elem).data("id");
   
 Swal.fire({
@@ -174,7 +171,8 @@ Swal.fire({
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!',
+  cancelButtonText: 'Batal',
+  confirmButtonText: 'Ya, Hapus Data!',
 }).then((result) => {
   if (result.value) {
     window.location.href="?halaman=supplier&aksi=hapus&id="+dataId;

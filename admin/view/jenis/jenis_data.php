@@ -52,7 +52,7 @@
                         data-jenis="<?php echo $result['nama_jenis']; ?>" 
                         data-ubah="ubah" 
                         ><i class="fas fa-edit"></i> Ubah</button>
-                        <button onClick="ShowModal(this)"  data-id="<?php echo $result ['id_jenis']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
+                        <button onClick="ShowModals(this)"  data-id="<?php echo $result ['id_jenis']; ?>" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
                       </div>
                     </td>
                   </tr>
@@ -114,17 +114,16 @@
     var newId = $(this).data('id');
     var newJenis = $(this).data('jenis');
     var newEdit = $(this).data('ubah');
-
     $('#m_id').val(newId);
     $('#m_jenis').val(newJenis);
     $('#m_aksi').val(newEdit);
 
 });
 });
-</script>
+</script> 
 
 <script>
-function ShowModal(elem){
+function ShowModals(elem){
 var dataId = $(elem).data("id");
   
 Swal.fire({
@@ -134,7 +133,7 @@ Swal.fire({
   showCancelButton: true,
   confirmButtonColor: '#3085d6',
   cancelButtonColor: '#d33',
-  confirmButtonText: 'Yes, delete it!',
+  confirmButtonText: 'Ya, Hapus !',
 }).then((result) => {
   if (result.value) {
     window.location.href="?halaman=jenis&aksi=hapus&id="+dataId;
