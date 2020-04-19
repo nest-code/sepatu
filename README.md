@@ -5,11 +5,12 @@ Perancangan Inventory Sepatu
 API
 
 - bootstrap 4
-- admin lte
+- adminlte
 
-- php Native
-- pavascript
+- php native
+- javascript
 - ajax
+
 
 Database
 SQL : phpmyadamin
