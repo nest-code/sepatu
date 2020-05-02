@@ -5,6 +5,7 @@ $id=$_POST['barcode'];
 $sql = "select barcode from tb_sepatu where barcode='$id'";
 
 $process = mysqli_query($koneksi,$sql);
+
 $num = mysqli_num_rows($process);
 
 if($num == 0){
