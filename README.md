@@ -1,6 +1,12 @@
 # sepatu
 
-Perancangan Inventory Sepatu
+Perancangan Inventori Sepatu (Progress)
+
+- Hak Akses (Admin)
+- Aplikasi dapat melakukan CRUD (Create, Read, Update, Delete)
+- Admin dapat Menambahkan Tranasaksi (Stock In)
+
+**Teknologi**
 
 - bootstrap 4
 - adminlte
